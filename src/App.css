@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;500&display=swap');
+ion-icon{
+    color: cornflowerblue;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.container{
+    position: relative;
+    top: 2em;
+    width: 30em;
+    padding-bottom: 3em;
+    height: fit-content;
+    background-color: whitesmoke;
+    box-shadow:
+            0 1px 1px rgba(0,0,0,0.15),
+            0 10px 0 -5px #eee,
+            0 10px 1px -4px rgba(0,0,0,0.15),
+            0 20px 0 -20px  #eee,
+            0 20px 1px -9px rgba(0,0,0,0.15)
+    ;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.todo-item{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 16em;
+    height: 2em;
+    border-bottom: 2px solid darkgrey;
+    padding: 3em 3em;
+}
+
+.todo-item>p{
+    font-size: 20px;
+    position: relative;
+    bottom: 1em;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: darkgrey;
+    width: 15em;
+    margin-left: 2em;
+}
+
+.todo-item>input{
+    width: 2em;
+    height: 2em;
+}
+.options{
+    display: flex;
+    gap: 20px;
+    position: relative;
+    left: 30em;
+}
+.add{
+    border : none;
+    cursor: pointer;
+    background-color: lightgray;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: red;
+}
+.delete{
+    position: relative;
+    cursor: pointer;
+    background-color: lightgray;
+    font-family: 'Zen Maru Gothic', sans-serif;
+    color: red;
+    border: 2px solid red;
+    border-radius: 60px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
